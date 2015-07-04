@@ -31,5 +31,9 @@ puts "I'm going to write these to the file."
 #target.write("\n")
 target.write(line1 + "\n" + line2 + "\n" + line3 + "\n")
 
-puts "And finally, we close it."
+#puts "And finally, we close it."
+target.close
+target = open(filename)
+puts "Here's your new file: "
+print target.read
 target.close
